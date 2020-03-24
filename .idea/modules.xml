@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HealthWatcher.iml" filepath="$PROJECT_DIR$/HealthWatcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/HealthWatcher-app.iml" filepath="$PROJECT_DIR$/app/HealthWatcher-app.iml" group="HealthWatcher/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/repos-HealthWatcher.iml" filepath="$PROJECT_DIR$/repos-HealthWatcher.iml" group="HealthWatcher" />
     </modules>
   </component>
 </project>

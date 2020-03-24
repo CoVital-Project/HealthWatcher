@@ -6,11 +6,12 @@ import android.content.res.Configuration;
 import android.hardware.Camera;
 import android.os.Bundle;
 import android.os.PowerManager;
-import android.support.v7.app.AppCompatActivity;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.yo7a.healthwatcher.Math.Fft;
 import com.example.yo7a.healthwatcher.Math.Fft2;
@@ -18,6 +19,7 @@ import com.example.yo7a.healthwatcher.Math.Fft2;
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import static android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON;
 import static java.lang.Math.ceil;
 import static java.lang.Math.sqrt;
 
@@ -104,7 +106,7 @@ public class VitalSignsProcess extends AppCompatActivity {
 
         // WakeLock Initialization : Forces the phone to stay On
         PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
-        wakeLock = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK, "DoNotDimScreen");
+        wakeLock = pm.newWakeLock(FLAG_KEEP_SCREEN_ON, "healthwatcher:DoNotDimScreen");
     }
 
     //Prevent the system from restarting your activity during certain configuration changes,

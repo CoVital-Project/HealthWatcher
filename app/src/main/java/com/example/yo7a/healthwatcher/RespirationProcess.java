@@ -18,6 +18,7 @@ import com.example.yo7a.healthwatcher.Math.Fft2;
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import static android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON;
 import static java.lang.Math.ceil;
 
 public class RespirationProcess extends Activity {
@@ -76,7 +77,7 @@ public class RespirationProcess extends Activity {
 
         // WakeLock Initialization : Forces the phone to stay On
         PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
-        wakeLock = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK, "DoNotDimScreen");
+        wakeLock = pm.newWakeLock(FLAG_KEEP_SCREEN_ON, "healthwatcher:DoNotDimScreen");
     }
 
     //Prevent the system from restarting your activity during certain configuration changes,

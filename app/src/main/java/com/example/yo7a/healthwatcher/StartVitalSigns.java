@@ -1,10 +1,11 @@
 package com.example.yo7a.healthwatcher;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class StartVitalSigns extends AppCompatActivity {
     private String user;
