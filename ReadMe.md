@@ -1,6 +1,7 @@
 Health Watcher
 ===================
-
+THIS REPO HAS BEEN DISCONTINUED
+===================
 Is an android Application that can estimate Heart rate, Blood pressure, Respiration rate and Oxygen rate from only the camera of the mobile without using any extra sensors. 
 
 First I want to point that I used filters from here : https://github.com/berndporr/iirj
